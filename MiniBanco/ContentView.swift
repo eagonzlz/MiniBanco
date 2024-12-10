@@ -2,21 +2,19 @@
 //  ContentView.swift
 //  MiniBanco
 //
-//  Created by ArcaneHollow on 12/10/24.
+//  Created by Emanuel Gonzalez on 12/10/24.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @State private var userName: String = UserDefaultsManager.shared.loadUserName() // Load from UserDefaults
+    @State private var isCredentialsEntered: Bool = false
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        WelcomeScreenView(userName: $userName, isCredentialsEntered: $isCredentialsEntered)
     }
+    
 }
 
 #Preview {

@@ -2,7 +2,7 @@
 //  MiniBancoApp.swift
 //  MiniBanco
 //
-//  Created by ArcaneHollow on 12/10/24.
+//  Created by Emanuel Gonzalez on 12/10/24.
 //
 
 import SwiftUI
